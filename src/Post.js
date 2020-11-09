@@ -1,7 +1,7 @@
 import React from 'react';
 import './Post.css';
 import { Avatar} from '@material-ui/core';
-import { VerifiedUser } from '@material-ui/icons';
+import { ChatBubbleOutline, FavoriteBorder, Repeat, Publish, VerifiedUser } from '@material-ui/icons';
 
 function Post() {
     return <div className="post">
@@ -13,14 +13,21 @@ function Post() {
                 <div className="post__headerText">
                     <h3>
                         Newall Jemuel {" "}
-                        <span>
-                        <VerifiedUser className="post-badge" />
+                        <span className="post__headerSpecial">
+                        <VerifiedUser className="post-badge" /> @newallJemuel
                         </span>
                     </h3>
                 </div>
                 <div className="post__headerDescription">
                     <p>I challenge you to build a twitter clone with react</p>
                 </div>
+            </div>
+            <img src="https://media0.giphy.com/media/3ornjTqcV6IvKTLDuE/giphy.gif" alt=""/>
+            <div className="post__footer">
+                <ChatBubbleOutline fontSize="small"/>
+                <Repeat fontSize="small"/>
+                <FavoriteBorder fontSize="small"/>
+                <Publish fontSize="small"/>
             </div>
         </div>
     </div>
